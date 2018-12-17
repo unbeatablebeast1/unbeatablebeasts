@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <style>
+  body{
+
+    font: 15px/1.5 Arial.Helvetica,sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color:#f4f4f4;
+  }
+  .container{
+    width: 80%;
+    margin:auto;
+    overflow:hidden;
+  }
+  .dark{
+    padding: 15px;
+    background: #35424a;
+    color: #ffffff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+  }
+  header{
+    background: #35424a;
+    color:#ffffff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #e8491d 3px solid ;
+  }
+  header a{
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+
+
+  }
+  header ul{
+    margin:0;
+    padding:0;
+  }
+  header li{
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px  ;
+  }
+  header #title{
+    float:left;
+  }
+  header #title h1{
+    margin: 0;
+  }
+  header nav{
+    float:right;
+    margin-top: 10px;
+  }
+  header .highlight,header .current a{
+    color: #e8491d;
+    font-weight: bold;
+  }
+  header a:hover{
+    color:#cccccc;
+    font-weight: bold;
+  }
+  .showcase{
+    background: url("gif2.") center;
+   background-size: cover;
+  height: 100%;
+  }
+
+
+  /*Showcase*/
+  #showcase{
+    min-height: 400px;
+
+    text-align: center;
+    color:#ffffff;
+
+  }
+  #showcase h1
+  {
+    margin-top: 100px;
+    font-size: 55px;
+    margin-bottom: 10px;
+  }
+  #showcase p{
+    font-size: 20px;
+  }
+  /*boxes*/
+  #boxes{
+    margin-top: 20px;
+  }
+  #boxes .box{
+    float:left;
+    text-align: center;
+    width: 30%;
+
+    padding: 10px;
+
+  }
+  aside#sidebar{
+    float: right;
+    width: 30%;
+    margin-top:10px;
+  }
+  article#main-col{
+    float: left;
+    width: 65%;
+  }
+  ul#Team li{
+    list-style:
+
+    padding:20px;
+    border: #cccccc solid 1px;
+    margin-bottom: 5px;
+    background: #e6e6e6;
+  }
+  footer{
+
+    clear: both;
+    padding:20px;
+    margin-top: 20px;
+    color: #ffffff;
+    background-color: #e8491d;
+    text-align: center;
+  }
+
+    }
+
+  }
+
+  </style>
+
+  </head>
+  <body>
+  <header>
+    <div class="container">
+      <div id="title">
+        <h1><span class="highlight">Engineering Academy Website</span></h1>
+
+      </div>
+
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Index</a></li>
+          <li class="current"><a href="blog.html">blog</a></li>
+          <li><a href="Team.html">Team</a></li>
+          <li><a href="review.html">review</a></li>
+          <li ><a href="Resources.html">Resources</a></li>
+        </ul>
+      </nav>
+      </div>
+
+
+
+  </header>
+
+    <section id="main">
+      <div class="container">
+        <article id="main-col" >
+          <h2 class="page-title">Blog</h2>
+          <p> We started the try-outs with a icebreaker,where we have to use a limited number of ice-cream sticks to make a structure that relates with a christmas tree , minimum 2 fonts, free standing and must have the 3D star placed on top
+            of the tree. The group with the highest "tree" and fulfill the criteria wins. And my Team came up with this
+          </p>
+          <img src="tree.jpeg" alt="tree" width="250px" length="350px">
+            <h2>AI-Car</h2>
+
+            <h3>Mission</h3>
+              <p>Build a "car" that continues moving forward, avoid the first obstacle and stop before colliding the second obstacle.</p>
+            <h3>Components</h3>
+              <li>Adruino UNO x 1
+              <li>Continuous Rotation Servo motors x 2
+              <li>Portable Power Bank x 1
+              <li>Body of the "car" x 1
+              <li>Mini-Trolley Wheels x 1
+              <li>Normal Wheels x 2
+
+            <h3>Steps</h3>
+              <p>We were only given a Adruino UNO and a Mini-Trolley Wheel, thus we must make the car body and the wheels using fusion 360</p>
+            <h3>Step 1(Prototype)</h3>
+              <p>We came up with a simple design, which is a flat board with stoppers at the top surrounding the portable power bank and the audrino to prevent them from falling off when the "car" is moving.
+               We used cardboards to make a simple prototype which allows us to visualise better and to get the dimensions.
+               <img src="prototype.jpeg" alt="prototype" width="250px" length="350px">
+            <h3>Step 2(Laser Cut)</h3>
+              <p>We used fusion 360 to make the components.(link to the fusion 360 file)<img src="fusion1.jpeg" alt="fusion1" width="250px" length="350px">.
+                 <p>Then we proceed with laser cutting.
+            <h3>Step 3(assembly)</h3>
+              <p>We tried  to fit the trolley  wheel to the board,however it did not fit the board hence we have to drill a hole so it cana fit the baord.We glued rubber band to the wheel to increase the friction of the wheel .We also used superglute to stick the component to the board</p>
+              <img src="assem.jpg" alt="assem" width="250px" length="350px">
+            <h3>Step 4(coding)</h3>
+              <p> We came up with this code for our car. </p>
+              <p>#include "Servo.h"</p>
+              <p>#define trigpin 6                         //connect trigo pin of the Ultra-Sound sensor to pin 6</p>
+              <p>#define echopin 2                         //connect echo pin of the Ultra-Sound sensor to pin 2</p>
+              <p>Servo Lservo;                             //left servo</p>
+              <p>Servo Rservo;                             //right servo</p>
+              <p>const int Lstopangle=85;</p>
+              <p>const int Rstopangle=95;</p>
+              <p>int count=0;                              //obstacle count</p>
+
+
+              <p>void setup(){</p>
+                <p>Lservo.attach(10);                      //left servo connect to pin 10</p>
+                <p>Rservo.attach(9);                       //right servo connect to pin 9</p>
+                <p>pinMode(trigpin,OUTPUT);</p>
+                <p>pinMode(echopin,INPUT);</p>
+                <p>Serial.begin(9600 );</p>
+                <p>}</p>
+
+              <p>void loop(){</p>
+                <p>digitalWrite(trigpin,LOW);</p>
+                <p>delayMicroseconds(10);</p>
+                <p>digitalWrite(trigpin,HIGH);</p>
+                <p>delayMicroseconds(10);</p>
+                <p>int dist=pulseIn(echopin,HIGH,8000)/58;</p>
+                <p>Serial.println(dist);</p>
+
+              <p>if (dist<=20 && dist!=0)                //when the distance between the sound sensor and the obstacle is less than or equals to 20</p>
+              <p>{</p>
+                <p>if (count>=1){                          //if this is the second obstacle, disconnect both servo</p>
+                  <p>Lservo.detach();</p>
+                  <p>Rservo.detach();</p>
+                  <p>}</p>
+                  <p>                                        //if this the first obstacle,</p>
+                  <p>turn_left();                            //turn left for 0.5 seconds,</p>
+                  <p>delay(500);                             </p>
+                  <p>carFwdDelay(3000);                      //move forward for 3 seconds,</p>
+                  <p>turn_right();                           //turn right for 0.5 seconds</p>
+                  <p>delay(500);</p>
+                  <p>count++;                                //increase obstacle count by 1</p>
+
+                  <p>}</p>
+              <p>else</p>
+              <p>{</p>
+                <p>carFwd();                               //if no obstacles detected, continue moving forawrd</p>
+                <p>}</p>
+              <p>}</p>
+
+              <p>void carFwd()</p>
+              <p>{</p>
+                <p>  Lservo.write(0);</p>
+                <p>  Rservo.write(180);</p>
+                <p>}</p>
+                <p>void carFwdDelay(int t)</p>
+                <p>{</p>
+                  <p>Lservo.write(0);</p>
+                  <p>Rservo.write(180);</p>
+                  <p>delay(t);</p>
+                  <p>}</p>
+                  <p>void turn_left()</p>
+                  <p>{</p>
+                    <p>Lservo.write(0);</p>
+                    <p>Rservo.write(0);</p>
+                    <p>}</p>
+                    <p>void turn_right()</p>
+                    <p>{</p>
+                      <p>Lservo.write(180);</p>
+                      <p>Rservo.write(180);</p>
+                      <p>}</p>
+          <h3>Result</h3>
+          <p></p>
+          <img src="final.jpg" alt="final" width="250px" length="350px">
+
+
+
+
+
+
+
+        </section>
+
+
+
+
+    <footer>copyright &copy;2018 Eawebsite
+    </footer>
+  </body>
+</html>
